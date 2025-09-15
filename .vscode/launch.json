@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "benchmate_local_lite/benchmate_local.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--models", "mistral-nemo:12b",
+                "--packs", "benchmate_local_lite/packs/core",
+                "--save-outputs"
+            ]
+        }
+    ]
+}

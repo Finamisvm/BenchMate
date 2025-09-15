@@ -1,0 +1,17 @@
+id: grounded_capa_steps_de_v1
+type: grounded
+language: de
+context: |
+  CAPA-Prozess (Kurzfassung):
+  1) Abweichung melden
+  2) Ursachenanalyse
+  3) Korrekturmaßnahme umsetzen
+  4) Wirksamkeitsprüfung
+question: "Nenne zwei zentrale Schritte im CAPA-Prozess."
+expected_keywords:
+  - Abweichung melden
+  - Ursachenanalyse
+  - Korrekturmaßnahme
+  - Wirksamkeitsprüfung
+min_keywords: 2
+unknown_ok: false

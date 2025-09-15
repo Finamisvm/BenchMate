@@ -1,0 +1,21 @@
+id: json_invoice_extract_v1
+type: json
+language: de
+prompt_template: |
+  Extrahiere die folgenden Felder als reines JSON (ohne Erklärungstext):
+  {{"rechnung_nr","datum","summe_eur"}}
+  Text:
+  {{document}}
+  Antworte NUR mit JSON.
+inputs:
+  document: |
+    RECHNUNG NR: INV-2025-0915
+    DATUM: 15.09.2025
+    GESAMT: 1.249,00 €
+schema:
+  type: object
+  required: [rechnung_nr, datum, summe_eur]
+  properties:
+    rechnung_nr: {type: string}
+    datum: {type: string}
+    summe_eur: {type: number}

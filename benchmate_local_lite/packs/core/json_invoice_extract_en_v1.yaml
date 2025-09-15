@@ -1,0 +1,21 @@
+id: json_invoice_extract_en_v1
+type: json
+language: en
+prompt_template: |
+  Extract the following fields as pure JSON (no extra prose):
+  {"invoice_no","date","total_eur"}
+  Text:
+  {{document}}
+  Reply with JSON only.
+inputs:
+  document: |
+    INVOICE NO: INV-24-001
+    DATE: 2024-11-05
+    TOTAL: EUR 199.50
+schema:
+  type: object
+  required: [invoice_no, date, total_eur]
+  properties:
+    invoice_no: {type: string}
+    date: {type: string}
+    total_eur: {type: number}

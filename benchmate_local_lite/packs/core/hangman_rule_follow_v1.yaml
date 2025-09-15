@@ -1,0 +1,12 @@
+id: hangman_rule_follow_v1
+type: hangman
+language: de
+rules_prompt: |
+  Wir spielen eine Regelübung ähnlich Hangman.
+  Regeln (streng):
+  - Antworte in jedem Zug mit GENAU EINEM Kleinbuchstaben (a–z). NUR der Buchstabe, sonst nichts.
+  - Wiederhole nie einen Buchstaben.
+  - Keine Begründung, keine Satzzeichen, kein Codeblock.
+
+  Wenn du gegen eine Regel verstößt, ist das ein Fehlversuch.
+turns: 5

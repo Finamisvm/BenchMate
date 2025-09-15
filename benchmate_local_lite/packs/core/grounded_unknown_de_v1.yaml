@@ -1,0 +1,11 @@
+id: grounded_unknown_de_v1
+type: grounded
+language: de
+context: |
+  Öffnungszeiten Laborannahme:
+  - Mo–Fr: 08:00–16:00
+  - Sa/So: geschlossen
+question: "Wie heißt der Datenschutzbeauftragte?"
+expected_keywords: []
+min_keywords: 0
+unknown_ok: true
