@@ -12,7 +12,7 @@
             "program": "benchmate_local_lite/benchmate_local.py",
             "console": "integratedTerminal",
             "args": [
-                "--models", "mistral-nemo:12b",
+                "--models", "mistral-nemo:12b,Qwen3:30b,gemma3:27b,gpt-oss:20b",
                 "--packs", "benchmate_local_lite/packs/core",
                 "--save-outputs"
             ]

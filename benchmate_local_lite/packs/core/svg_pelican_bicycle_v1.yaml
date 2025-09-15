@@ -1,0 +1,11 @@
+id: svg_pelican_bicycle_v1
+type: svg
+language: en
+prompt_template: |
+  Create an SVG of a pelican riding a bicycle.
+  Requirements:
+  - Return **ONLY raw SVG**, no markdown fences.
+  - Include <title> and <desc>. The <desc> must mention both \"pelican\" and \"bicycle\".
+  - The scene should clearly communicate a pelican on a bike.
+
+  Output: the SVG code only.
