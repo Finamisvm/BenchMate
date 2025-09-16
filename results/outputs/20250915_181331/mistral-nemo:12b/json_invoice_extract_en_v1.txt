@@ -1,0 +1,17 @@
+PROMPT:
+Extract the following fields as pure JSON (no extra prose):
+{"invoice_no","date","total_eur"}
+Text:
+INVOICE NO: INV-24-001
+DATE: 2024-11-05
+TOTAL: EUR 199.50
+
+Reply with JSON only.
+
+
+OUTPUT:
+{
+  "invoice_no": "INV-24-001",
+  "date": "2024-11-05",
+  "total_eur": 199.50
+}

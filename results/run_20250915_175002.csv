@@ -1,0 +1,7 @@
+run_id,timestamp,model,task_id,type,language,pass,reason,latency_ms,output_chars
+20250915_175002,2025-09-15T17:51:51,gpt-oss:20b,grounded_capa_steps_de_v1,grounded,de,1,Contains 2/4 expected keywords.,38109,38
+20250915_175002,2025-09-15T17:59:37,gpt-oss:20b,svg_pelican_bicycle_v1,svg,en,1,OK,87249,1291
+20250915_175002,2025-09-15T18:02:04,gpt-oss:20b,json_invoice_extract_v1,json,de,1,OK,41218,72
+20250915_175002,2025-09-15T18:03:25,gpt-oss:20b,grounded_unknown_de_v1,grounded,de,1,Admitted uncertainty.,33356,13
+20250915_175002,2025-09-15T18:05:54,gpt-oss:20b,json_invoice_extract_en_v1,json,en,1,OK,36298,65
+20250915_175002,2025-09-15T18:07:07,gpt-oss:20b,hangman_rule_follow_v1,hangman,de,0,Turn 1: Response must be exactly one lowercase letter. (model said: ''),31131,17

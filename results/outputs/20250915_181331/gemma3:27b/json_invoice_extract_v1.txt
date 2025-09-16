@@ -1,0 +1,21 @@
+PROMPT:
+Extrahiere die folgenden Felder als reines JSON (ohne Erklärungstext):
+{{"rechnung_nr","datum","summe_eur"}}
+Text:
+RECHNUNG NR: INV-2025-0915
+DATUM: 15.09.2025
+GESAMT: 1.249,00 €
+
+Antworte NUR mit JSON.
+
+
+OUTPUT:
+```json
+[
+  {
+    "rechnung_nr": "INV-2025-0915",
+    "datum": "15.09.2025",
+    "summe_eur": "1.249,00"
+  }
+]
+```

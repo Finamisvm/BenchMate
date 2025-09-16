@@ -1,0 +1,14 @@
+PROMPT:
+Lies den folgenden Kontext sorgfältig und beantworte die Frage knapp.
+Wenn die Antwort NICHT im Kontext steht, sage ausdrücklich: "nicht im Text".
+Kontext:
+Öffnungszeiten Laborannahme:
+- Mo–Fr: 08:00–16:00
+- Sa/So: geschlossen
+
+
+Frage: Wie heißt der Datenschutzbeauftragte?
+Antwort:
+
+OUTPUT:
+nicht im Text

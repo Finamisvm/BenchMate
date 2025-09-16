@@ -1,0 +1,5 @@
+PROMPT:
+Genial. Nächster Buchstabe:
+
+OUTPUT:
+(hangman 5 turns)

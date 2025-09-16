@@ -1,0 +1,25 @@
+run_id,timestamp,model,task_id,type,language,pass,reason,latency_ms,output_chars
+20250915_181331,2025-09-15T18:13:33,mistral-nemo:12b,grounded_capa_steps_de_v1,grounded,de,1,Contains 2/4 expected keywords.,2253,39
+20250915_181331,2025-09-15T18:14:05,Qwen3:30b,grounded_capa_steps_de_v1,grounded,de,1,Contains 4/4 expected keywords.,31976,2751
+20250915_181331,2025-09-15T18:14:42,gemma3:27b,grounded_capa_steps_de_v1,grounded,de,1,Contains 2/4 expected keywords.,36779,48
+20250915_181331,2025-09-15T18:15:19,gpt-oss:20b,grounded_capa_steps_de_v1,grounded,de,1,Contains 2/4 expected keywords.,37498,38
+20250915_181331,2025-09-15T18:15:43,mistral-nemo:12b,svg_pelican_bicycle_v1,svg,en,1,OK,23486,720
+20250915_181331,2025-09-15T18:18:43,Qwen3:30b,svg_pelican_bicycle_v1,svg,en,0,No <svg> block in output.,180101,95
+20250915_181331,2025-09-15T18:21:43,gemma3:27b,svg_pelican_bicycle_v1,svg,en,0,No <svg> block in output.,180031,95
+20250915_181331,2025-09-15T18:23:10,gpt-oss:20b,svg_pelican_bicycle_v1,svg,en,1,OK,86859,1291
+20250915_181331,2025-09-15T18:23:15,mistral-nemo:12b,json_invoice_extract_v1,json,de,1,OK,4611,71
+20250915_181331,2025-09-15T18:24:05,Qwen3:30b,json_invoice_extract_v1,json,de,0,Output is not pure JSON (extra text or invalid JSON).,50708,2943
+20250915_181331,2025-09-15T18:24:56,gemma3:27b,json_invoice_extract_v1,json,de,0,Output is not pure JSON (extra text or invalid JSON).,50818,114
+20250915_181331,2025-09-15T18:25:37,gpt-oss:20b,json_invoice_extract_v1,json,de,1,OK,41237,72
+20250915_181331,2025-09-15T18:25:40,mistral-nemo:12b,grounded_unknown_de_v1,grounded,de,1,Admitted uncertainty.,2514,13
+20250915_181331,2025-09-15T18:25:52,Qwen3:30b,grounded_unknown_de_v1,grounded,de,1,Admitted uncertainty.,11811,819
+20250915_181331,2025-09-15T18:26:26,gemma3:27b,grounded_unknown_de_v1,grounded,de,1,Admitted uncertainty.,34207,13
+20250915_181331,2025-09-15T18:26:59,gpt-oss:20b,grounded_unknown_de_v1,grounded,de,1,Admitted uncertainty.,33064,13
+20250915_181331,2025-09-15T18:27:04,mistral-nemo:12b,json_invoice_extract_en_v1,json,en,1,OK,4906,79
+20250915_181331,2025-09-15T18:28:00,Qwen3:30b,json_invoice_extract_en_v1,json,en,0,Output is not pure JSON (extra text or invalid JSON).,56320,3687
+20250915_181331,2025-09-15T18:28:44,gemma3:27b,json_invoice_extract_en_v1,json,en,0,Output is not pure JSON (extra text or invalid JSON).,43607,80
+20250915_181331,2025-09-15T18:29:20,gpt-oss:20b,json_invoice_extract_en_v1,json,en,1,OK,36376,65
+20250915_181331,2025-09-15T18:29:23,mistral-nemo:12b,hangman_rule_follow_v1,hangman,de,0,"Turn 2: Response must be exactly one lowercase letter. (model said: 'Das nächste Wort, das ich schreiben würde')",2892,17
+20250915_181331,2025-09-15T18:29:27,Qwen3:30b,hangman_rule_follow_v1,hangman,de,0,"Turn 1: Response must be exactly one lowercase letter. (model said: ""<think>\nOkay, let's see."")",3552,17
+20250915_181331,2025-09-15T18:30:03,gemma3:27b,hangman_rule_follow_v1,hangman,de,0,Turn 2: Response must be exactly one lowercase letter. (model said: 'Okay! Nächster Buchst'),36180,17
+20250915_181331,2025-09-15T18:30:34,gpt-oss:20b,hangman_rule_follow_v1,hangman,de,0,Turn 1: Response must be exactly one lowercase letter. (model said: ''),31186,17

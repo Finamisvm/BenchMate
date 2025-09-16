@@ -1,0 +1,65 @@
+PROMPT:
+Extrahiere die folgenden Felder als reines JSON (ohne Erklärungstext):
+{{"rechnung_nr","datum","summe_eur"}}
+Text:
+RECHNUNG NR: INV-2025-0915
+DATUM: 15.09.2025
+GESAMT: 1.249,00 €
+
+Antworte NUR mit JSON.
+
+
+OUTPUT:
+<think>
+Okay, let's see. The user wants me to extract specific fields from the given text and output them as pure JSON without any explanation. The fields to extract are "rechnung_nr", "datum", and "summe_eur".
+
+First, I need to look at the text provided. The text says:
+
+RECHNUNG NR: INV-2025-0915
+DATUM: 15.09.2025
+GESAMT: 1.249,00 €
+
+So, "rechnung_nr" should be the value after "RECHNUNG NR:", which is INV-2025-0915. Then "datum" is the date after "DATUM:", which is 15.09.2025. For "summe_eur", the text has "GESAMT: 1.249,00 €". The user wants the sum in EUR, so I need to take the number part, which is 1.249,00. But wait, in some regions, commas are used as decimal separators. So 1.249,00 would be 1249.00 in standard notation. But the user might just want the string as it appears, without converting. Let me check the example. The user provided "summe_eur" as a field, so probably they want the exact string from the text, which is "1.249,00".
+
+Wait, the text says "1.249,00 €", so the number part is "1.249,00". But in JSON, it's a string, so I should keep it as is. So "summe_eur" would be "1.249,00".
+
+Now, check if there are any other fields. The user specified only those three. So I need to make sure not to include anything else.
+
+Let me structure the JSON:
+
+{
+  "rechnung_nr": "INV-2025-0915",
+  "datum": "15.09.2025",
+  "summe_eur": "1.249,00"
+}
+
+Wait, the user said "summe_eur", so the value should be the number part without the euro symbol. The text has "1.249,00 €", so the value is "1.249,00". So in the JSON, it's a string, so I should include the comma as part of the string.
+
+Also, check if the date format is correct. The text says "15.09.2025", which is day.month.year, so that's fine.
+
+Double-checking the fields:
+
+- rechnung_nr: INV-2025-0915
+- datum: 15.09.2025
+- summe_eur: 1.249,00
+
+Yes, that's all. Now, make sure there are no extra spaces or characters. The user said pure JSON without any explanation, so just the JSON object.
+
+Wait, the user mentioned "reines JSON (ohne Erklärungstext)", so no extra text, just the JSON. So the answer should be exactly the JSON object.
+
+Let me confirm the formatting. In JSON, keys must be in double quotes, and the values as well. So the correct format is:
+
+{"rechnung_nr": "INV-2025-0915", "datum": "15.09.2025", "summe_eur": "1.249,00"}
+
+Wait, the user's example in the problem statement uses double quotes inside the JSON, so I should use double quotes for all keys and string values.
+
+Also, check if the sum has a space before the euro symbol. The text says "1.249,00 €", but the user wants the summe_eur field, so probably just the number part, so "1.249,00" without the space and symbol.
+
+Yes, so "summe_eur" is "1.249,00".
+
+Alright, that should be it. Let me make sure there are no typos. INV-2025-0915, 15.09.2025, 1.249,00.
+
+Looks good. So the JSON should be as above.
+</think>
+
+{"rechnung_nr": "INV-2025-0915", "datum": "15.09.2025", "summe_eur": "1.249,00"}

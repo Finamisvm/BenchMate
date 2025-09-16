@@ -1,0 +1,22 @@
+PROMPT:
+Lies den folgenden Kontext sorgfältig und beantworte die Frage knapp.
+Wenn die Antwort NICHT im Kontext steht, sage ausdrücklich: "nicht im Text".
+Kontext:
+Öffnungszeiten Laborannahme:
+- Mo–Fr: 08:00–16:00
+- Sa/So: geschlossen
+
+
+Frage: Wie heißt der Datenschutzbeauftragte?
+Antwort:
+
+OUTPUT:
+<think>
+Okay, let's see. The user is asking for the name of the data protection officer. The context provided is about the opening hours of a lab reception. The hours are Monday to Friday from 8 AM to 4 PM, and closed on weekends.
+
+Hmm, the question is about the Datenschutzbeauftragte, which is German for Data Protection Officer. But looking at the context, there's no mention of any names, let alone a data protection officer. The context only talks about opening hours. So, the answer isn't in the text. The user said if the answer isn't in the context, I should say "nicht im Text". 
+
+Wait, let me double-check. The context is only the opening times. No names, no contact info, nothing about a data protection officer. So yeah, the answer isn't there. I should respond with "nicht im Text".
+</think>
+
+nicht im Text

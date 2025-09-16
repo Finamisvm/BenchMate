@@ -1,0 +1,17 @@
+PROMPT:
+Lies den folgenden Kontext sorgfältig und beantworte die Frage knapp.
+Wenn die Antwort NICHT im Kontext steht, sage ausdrücklich: "nicht im Text".
+Kontext:
+CAPA-Prozess (Kurzfassung):
+1) Abweichung melden
+2) Ursachenanalyse
+3) Korrekturmaßnahme umsetzen
+4) Wirksamkeitsprüfung
+
+
+Frage: Nenne zwei zentrale Schritte im CAPA-Prozess.
+Antwort:
+
+OUTPUT:
+1) Abweichung melden
+2) Ursachenanalyse

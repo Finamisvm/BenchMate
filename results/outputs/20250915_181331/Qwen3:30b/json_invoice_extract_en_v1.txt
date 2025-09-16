@@ -1,0 +1,61 @@
+PROMPT:
+Extract the following fields as pure JSON (no extra prose):
+{"invoice_no","date","total_eur"}
+Text:
+INVOICE NO: INV-24-001
+DATE: 2024-11-05
+TOTAL: EUR 199.50
+
+Reply with JSON only.
+
+
+OUTPUT:
+<think>
+Okay, let's see. I need to extract the invoice_no, date, and total_eur from the given text. The text provided is:
+
+INVOICE NO: INV-24-001
+DATE: 2024-11-05
+TOTAL: EUR 199.50
+
+First, I'll check each field. The invoice number is clearly "INV-24-001" after "INVOICE NO: ". So that's straightforward.
+
+Next, the date is "2024-11-05" under "DATE: ". I should make sure it's in the correct format, which it is, so that's good.
+
+For the total, it says "TOTAL: EUR 199.50". The field is total_eur, so I need to extract the numeric part, which is 199.50. The "EUR" is the currency, but the field is total_eur, so probably just the number. Wait, the example in the problem says "total_eur", so maybe they want the value as a number, not including the currency symbol. So 199.50.
+
+Wait, but the user said "pure JSON (no extra prose)", so I need to make sure the JSON has the correct keys and values. Let me check again.
+
+Invoice_no: "INV-24-001" – correct.
+
+Date: "2024-11-05" – correct.
+
+Total_eur: 199.50. Wait, should it be a string or a number? The example in the problem shows "total_eur" as a field, and the text has "EUR 199.50". Since the user didn't specify, but in JSON, numbers are without quotes. However, sometimes totals might be kept as strings if they have decimals. But the problem says "pure JSON", so probably as a number. Wait, but the example in the user's instruction shows "total_eur" as a field, and the value is "EUR 199.50", but the field is total_eur, so maybe they just want the numeric value. Let me check the problem statement again.
+
+The user says: "Extract the following fields as pure JSON (no extra prose): {"invoice_no","date","total_eur"}"
+
+So the fields are invoice_no (string), date (string, ISO format), total_eur (probably a number, but maybe string). Wait, the example text has "TOTAL: EUR 199.50", so the total_eur should be 199.50 as a number. But sometimes in JSON, even if it's a number, people might put it as a string. However, the problem says "pure JSON", so I should use the correct data type. Since 199.50 is a number, it should be without quotes. But let me check if the user expects a string. The problem statement doesn't specify, but in most cases, monetary values as numbers are acceptable. However, sometimes they might want it as a string to preserve the exact format. Wait, the user's example in the problem statement shows "total_eur" as a field, and the text has "EUR 199.50", so the value for total_eur should be 199.50 as a number. So in JSON, it would be 199.50 without quotes.
+
+Wait, but let's confirm. If I write "total_eur": 199.50, that's a number. If it's a string, it would be "199.50". The problem says "total_eur", which might imply the amount in EUR, so the numeric value. So I'll go with the number.
+
+So putting it all together:
+
+{
+  "invoice_no": "INV-24-001",
+  "date": "2024-11-05",
+  "total_eur": 199.50
+}
+
+Wait, but in JSON, the keys must be in quotes, and the values for strings must be in quotes, numbers not. So "invoice_no" and "date" are strings, so their values are in quotes. "total_eur" is a number, so no quotes.
+
+Let me check if the date is correctly formatted. The text says "2024-11-05", which is YYYY-MM-DD, so that's correct.
+
+So the JSON should be:
+
+{"invoice_no": "INV-24-001", "date": "2024-11-05", "total_eur": 199.50}
+
+Wait, but in JSON, the keys must be in double quotes, which they are. The user said "pure JSON", so no extra spaces or anything. Let me make sure there are no typos. Invoice number is INV-24-001, date is 2024-11-05, total is 199.50.
+
+Yes, that's correct. So the JSON should have those values.
+</think>
+
+{"invoice_no": "INV-24-001", "date": "2024-11-05", "total_eur": 199.50}
